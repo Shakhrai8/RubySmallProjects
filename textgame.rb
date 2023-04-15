@@ -7,13 +7,12 @@ if user == "left"
   puts"-------------------------------------------"
   puts "Oh no! There is a werewolf, you died."
   puts"-------------------------------------------"
-end
-if user == "right" 
+elsif user == "right" 
   puts"-------------------------------------------"
   puts "Oh no! There is a goblin, you died."
   puts"-------------------------------------------"
-end
-if user == "forward"
+elsif user == "forward"
+  puts"-------------------------------------------"
   puts "You proceed..."
   puts"-------------------------------------------"
   puts "Please choose the path from the following:"
@@ -24,15 +23,21 @@ if user == "forward"
     puts"-------------------------------------------"
     puts "You won!"
     puts"-------------------------------------------"
-  end
-  if user == "left" 
+  elsif user == "left" 
     puts"-------------------------------------------"
     puts "Oh no! There is a werewolf, you died."
     puts"-------------------------------------------"
-  end
-  if user == "right" 
+  elsif user == "right" 
     puts"-------------------------------------------"
     puts "Oh no! There is a goblin, you died."
     puts"-------------------------------------------"
+  else 
+    puts"-------------------------------------------"
+    puts "Wrong input, try again!"  
+    puts"-------------------------------------------"
   end
+else 
+  puts"-------------------------------------------"
+  puts "Wrong input, try again!"  
+  puts"-------------------------------------------"  
 end
